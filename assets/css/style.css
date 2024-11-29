@@ -34,7 +34,12 @@ h6 {
 /* navbar */
 
 .navbar {
-  background-color: var(--color-tres);
+  background-image: url(../images/sidebar-img.jpg);
+  background-position: relative;
+}
+
+.navbar .nav-link {
+  margin-left: 15px;
 }
 
 a.nav-link {
@@ -55,8 +60,8 @@ a.nav-link:hover {
 }
 
 .btn-cv:hover {
+  background-color: var(--color-dos);
   transform: scale(1.05);
-  background-color: var(--color-cuatro);
   color: var(--color-uno);
 }
 

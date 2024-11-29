@@ -57,10 +57,10 @@ a.nav-link:hover {
   background-color: var(--color-dos);
   color: var(--color-uno);
   border: none;
-  transition: 0.3s ease, transform 0.3s ease;
+  transition: 0.3s ease, transform 0.3s ease; 
 }
 
-.btn-cv:hover {
+.btn .btn-cv:hover {
   background-color: var(--color-dos);
   transform: scale(1.05);
   color: var(--color-uno);
@@ -180,6 +180,13 @@ h1.display-1 {
   background-color: var(--color-dos);
   color: var(--color-uno);
   border: none;
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-dos);
+  transform: scale(1.05);
+  color: var(--color-uno);
 }
 
 .card-body {

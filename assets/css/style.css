@@ -21,8 +21,27 @@ html {
     font-size: 16px;
 }
 
+.navbar {
+  background-color: var(--color-tres);
+}
+
+a.nav-link {
+  color: var(--color-uno);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a.nav-link:hover {
+  color: var(--color-dos);
+}
+
+
 .text-brand {
     color: var(--color-dos);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--color-dos);
 }
 
 .img-profile {
@@ -44,68 +63,3 @@ html {
     background-color: var(--color-cuatro);
     color: var(--color-uno);
   }
-
-
-/* acerca de mí */
-
-#acerca-de-mi {
-    padding: 60px 0; 
-  }
-  
-  
-  
-  
-#acerca-de-mi p {
-    color: var(--color-tres); 
-    line-height: 1.6; 
-    margin-top: 20px; 
-    max-width: 800px; 
-    margin-left: auto;
-    margin-right: auto; 
-}
-
-
-  /* experiencia */
-  
-.card {
-    border: 1px solid var(--color-dos); 
-    border-radius: 10px; 
-    padding: 15px; 
-    background-color: var(--color-dos); 
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  }
-  
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
-  }
-  
- 
-  .card-body {
-    padding: 20px; 
-  }
-  
- 
-  .card-body h3 {
-    font-size: 1.5rem; 
-    color: var(--color-uno); 
-    font-weight: bold;
-    margin-bottom: 10px; 
-  }
-  
-  .card-body h4 {
-    font-size: 1.2rem; 
-    color: var(--color-uno); 
-    margin-bottom: 15px; 
-  }
-  
-  
-  .card-body p {
-    font-size: 1rem; 
-    color: var(--color-uno); 
-    line-height: 1.6;
-    margin-bottom: 20px;   
-}

@@ -80,14 +80,20 @@ a.nav-link:hover {
 }
 
 .img-profile {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
   font-size: 1.4rem;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%; 
+  overflow: hidden; 
 }
 
 /* background */
@@ -101,7 +107,7 @@ a.nav-link:hover {
 
 .acerca-title {
   margin-bottom: 60px;
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
 
 .acerca h3 {
@@ -138,6 +144,11 @@ a.nav-link:hover {
   overflow: hidden; 
 }
 
+.portafolio-title {
+  margin-bottom: 60px;
+  font-size: 3rem;
+}
+
 .card .image-top img {
   object-fit: cover; 
   width: 100%; 
@@ -147,6 +158,7 @@ a.nav-link:hover {
 .btn {
   background-color: var(--color-dos);
   color: var(--color-uno);
+  border: none;
 }
 
 .card-body {

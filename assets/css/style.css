@@ -67,6 +67,14 @@ a.nav-link:hover {
 
 /* header */
 
+#seccion-header {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .text-brand {
   color: var(--color-dos);
 }
@@ -88,6 +96,7 @@ a.nav-link:hover {
   padding: 20px;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .acerca-title {
@@ -108,3 +117,4 @@ a.nav-link:hover {
 }
 
 /* portafolio */
+

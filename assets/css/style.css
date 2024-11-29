@@ -1,25 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 
+/* estilos generales */
 :root {
-    --color-uno: #ededf4; 
-    --color-dos: #a20021; 
-    --color-tres: #02020b; 
-    --color-cuatro: #f52f57; 
-    --color-cinco: #f3752b; 
-    --color-seis: #f79d5c;
-    
+  --color-uno: #ededf4;
+  --color-dos: #a20021;
+  --color-tres: #02020b;
+  --color-cuatro: #f52f57;
+  --color-cinco: #f3752b;
+  --color-seis: #f79d5c;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body  {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 16px;
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dos);
+}
+
+/* navbar */
 
 .navbar {
   background-color: var(--color-tres);
@@ -35,32 +47,59 @@ a.nav-link:hover {
   color: var(--color-dos);
 }
 
-
-
-.text-brand {
-    color: var(--color-dos);
+.btn-cv {
+  background-color: var(--color-dos);
+  color: var(--color-uno);
+  border: none;
+  transition: 0.3s ease, transform 0.3s ease;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.btn-cv:hover {
+  transform: scale(1.05);
+  background-color: var(--color-cuatro);
+  color: var(--color-uno);
+}
+
+/* header */
+
+.text-brand {
   color: var(--color-dos);
 }
 
 .img-profile {
-    width: 100%; 
-    height: auto;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  .btn-cv {
-    background-color: var(--color-dos); 
-    color: var(--color-uno); 
-    border: none; 
-    transition: 0.3s ease, transform 0.3s ease;
-  }
-  
-  .btn-cv:hover {
-    transform: scale(1.05);
-    background-color: var(--color-cuatro);
-    color: var(--color-uno);
-  }
+.about-text {
+  font-size: 1.4rem;
+}
+
+/* background */
+
+#acerca-de-mi {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.acerca-title {
+  margin-bottom: 60px;
+  font-size: 2.3rem;
+}
+
+.acerca h3 {
+  margin-bottom: 40px; 
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.large {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* portafolio */

@@ -72,7 +72,8 @@ a.nav-link:hover {
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  overflow: hidden; 
 }
 
 .text-brand {
@@ -83,18 +84,34 @@ a.nav-link:hover {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .about-text {
   font-size: 1.4rem;
   word-wrap: break-word;
-  max-width: 100%;
+  line-height: 1.6;
+  overflow-wrap: break-word;
 }
 
-.container {
-  max-width: 100%; 
-  overflow: hidden; 
+#seccion-header .container {
+  max-width: 1300px; 
+  padding: 0 15px; 
+  margin: 0 auto;
 }
+
+h1.display-1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  h1.display-1 {
+    font-size: 3.5rem; 
+  }
+}
+
 
 /* background */
 

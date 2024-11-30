@@ -129,6 +129,7 @@ h1.display-1 {
 .acerca-title {
   margin-bottom: 60px;
   font-size: 3rem;
+  font-weight: 800;
 }
 
 .acerca h3 {
@@ -178,6 +179,7 @@ h1.display-1 {
 .portafolio-title {
   margin-bottom: 60px;
   font-size: 3rem;
+  font-weight: 800;
 }
 
 .card .image-top img {
@@ -203,6 +205,12 @@ h1.display-1 {
 
 #redes-sociales .container {
   max-width: 800px;
+}
+
+.redes-title {
+  margin-bottom: 60px;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 #redes-sociales .fa-brands {

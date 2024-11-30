@@ -158,6 +158,11 @@ h1.display-1 {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  transition: 0.5s ease,
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card .image-top {

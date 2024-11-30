@@ -5,9 +5,8 @@
   --color-uno: #ededf4;
   --color-dos: #a20021;
   --color-tres: #02020b;
-  --color-cuatro: #f52f57;
-  --color-cinco: #f3752b;
-  --color-seis: #f79d5c;
+  --color-cuatro: #f0efeb;
+  --color-cinco: #333333;
 }
 
 * {
@@ -21,6 +20,7 @@ body {
   font-size: 16px;
   font-weight: 800;
   padding-top: 90px;
+  background-color: var(--color-cuatro);
 }
 
 h1,
@@ -30,6 +30,7 @@ h4,
 h5,
 h6 {
   color: var(--color-dos);
+  font-size: 3rem;
 }
 
 /* navbar */
@@ -57,7 +58,7 @@ a.nav-link:hover {
   background-color: var(--color-dos);
   color: var(--color-uno);
   border: none;
-  transition: 0.3s ease, transform 0.3s ease; 
+  transition: 0.3s ease, transform 0.3s ease;
 }
 
 .btn .btn-cv:hover {
@@ -74,7 +75,7 @@ a.nav-link:hover {
   height: auto;
   display: flex;
   flex-flow: row wrap;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .text-brand {
@@ -99,8 +100,8 @@ a.nav-link:hover {
 }
 
 #seccion-header .container {
-  max-width: 1300px; 
-  padding: 0 15px; 
+  max-width: 1300px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -112,12 +113,11 @@ h1.display-1 {
 
 @media (min-width: 768px) {
   h1.display-1 {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
   }
 }
 
-
-/* background */
+/* acerca de mi */
 
 #acerca-de-mi {
   padding: 20px;
@@ -132,7 +132,7 @@ h1.display-1 {
 }
 
 .acerca h3 {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   font-size: 1.9rem;
   font-weight: 500;
 }
@@ -146,28 +146,34 @@ h1.display-1 {
 /* portafolio */
 
 .image-top img {
-  max-width: 100%; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto; 
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .card {
   height: 100%;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  transition: 0.5s ease,
+  background-color: var(--color-cinco);
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card-body {
+  padding: 1rem;
+  flex-grow: 1;
+  color: var(--color-uno);
+}
+
+.card-title {
+  color: var(--color-dos); 
 }
 
 .card .image-top {
-  height: 200px; 
-  overflow: hidden; 
+  height: 200px;
+  overflow: hidden;
 }
 
 .portafolio-title {
@@ -176,9 +182,9 @@ h1.display-1 {
 }
 
 .card .image-top img {
-  object-fit: cover; 
-  width: 100%; 
-  height: 100%; 
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .btn {
@@ -194,11 +200,36 @@ h1.display-1 {
   color: var(--color-uno);
 }
 
-.card-body {
-  padding: 1rem; 
-  flex-grow: 1; 
+
+/* redes sociales */
+
+#redes-sociales .container {
+  max-width: 800px; 
+}
+
+#redes-sociales .fa-brands {
+  transition: transform 0.3s ease, color 0.3s ease;  
 }
 
 
+#redes-sociales a:hover .fa-github {
+  color: #24292f;  
+  transform: scale(1.1);  
+}
 
+#redes-sociales a:hover .fa-linkedin {
+  color: #0e76a8;  
+  transform: scale(1.1);
+}
 
+#redes-sociales .d-flex a {
+  font-size: 3rem;  
+}
+
+#redes-sociales .d-flex a {
+  text-decoration: none;  
+}
+
+#redes-sociales .d-flex a:focus {
+  outline: none; 
+}
